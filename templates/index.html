@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PyMeme</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+    />
+  </head>
+  <body>
+    <div class="columns is-centered">
+      <div class="column is-half">
+        <h1 class="title has-text-centered">PyMeme</h1>
+        <form action="/image" method="POST" enctype="multipart/form-data">
+          <input
+            type="file"
+            name="image"
+            accept=".jpg"
+            required
+            class="input is-primary is-rounded"
+          />
+          <input
+            type="text"
+            name="text"
+            placeholder="Text"
+            required
+            class="input is-primary is-rounded"
+          />
+          <input
+            type="text"
+            name="xCoordinates"
+            placeholder="xCoordinates"
+            required
+            class="input is-primary is-rounded"
+          />
+          <input
+            type="text"
+            name="yCoordinates"
+            placeholder="yCoordinates"
+            required
+            class="input is-primary is-rounded"
+          />
+          <input
+            type="number"
+            name="fontSize"
+            placeholder="fontSize"
+            required
+            class="input is-primary is-rounded"
+          />
+          <input
+            type="color"
+            name="color"
+            class="input is-primary is-rounded"
+          />
+          <div class="has-text-centered">
+            <button type="submit" class="button is-primary">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

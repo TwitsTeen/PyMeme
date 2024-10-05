@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PyMeme</title>
+  </head>
+  <body>
+    {% if result %}
+    <img
+      src="{{ url_for('static', filename='images/' + result) }}"
+      alt="Decoded Image"
+    />
+    {% else %}
+    <p>No result</p>
+    {% endif %}
+  </body>
+</html>
